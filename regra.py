@@ -1,5 +1,5 @@
 class regraJogo:
-    def __init__(self, obj1=None or 0, obj2=None or 0, **kwargs):
+    def __init__(self, obj1, obj2, **kwargs):
         self.obj1 = obj1
         self.obj2 = obj2
         super().__init__(**kwargs)
