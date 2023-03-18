@@ -22,24 +22,19 @@ class regraJogo:
                 else:
                     print("Jogador 1 perdeu!")
             except:
-                if str(self.obj1) == 'Pedra' or str(self.obj1) == 'pedra' and (str(self.obj2) == 'Tesoura' or 
-                (str(self.obj2) == 'tesoura' or str(self.obj2) == 'Lagarto' or str(self.obj2) == 'lagarto')):
+                if str(self.obj1).lower() == 'pedra' and ((str(self.obj2).lower() == 'tesoura' or str(self.obj2).lower() == 'lagarto')):
                     print('Jogador 1 Ganhou!')
-
-                elif str(self.obj1) == 'Papel' or str(self.obj1) == 'papel' and (str(self.obj2) == 'Spock' or
-                    str(self.obj2) == 'spock' or str(self.obj2) == 'Pedra' or str(self.obj2) == 'pedra'):
+                
+                elif str(self.obj1).lower() == 'papel' and ((str(self.obj2).lower() == 'spock' or str(self.obj2).lower() == 'pedra')):
                     print('Jogador 1 Ganhou!')
-
-                elif str(self.obj1) == 'Tesoura' or str(self.obj1) == 'tesoura' and (str(self.obj2) == 'Papel' or 
-                    str(self.obj2) == 'papel' or str(self.obj2) == 'Lagarto' or str(self.obj2) == 'lagarto'):
+                
+                elif str(self.obj1).lower() == 'tesoura' and ((str(self.obj2).lower() == 'papel' or str(self.obj2).lower() == 'lagarto')):
                     print('Jogador 1 Ganhou!')
-
-                elif str(self.obj1) == 'Spock' or str(self.obj1) == 'spock' and (str(self.obj2) == 'Tesoura' or 
-                    str(self.obj2) == 'tesoura' or str(self.obj2) == 'Pedra' or str(self.obj2) == 'pedra'):
+                
+                elif str(self.obj1).lower() == 'spock' and ((str(self.obj2).lower() == 'tesoura' or str(self.obj2).lower() == 'pedra')):
                     print('Jogador 1 Ganhou!')
-
-                elif str(self.obj1) == 'Lagarto' or str(self.obj1) == 'lagarto' and (str(self.obj2) == 'Papel' or 
-                    str(self.obj2) == 'papel' or str(self.obj2) == 'Spock' or str(self.obj2) == 'spock'):
+                
+                elif str(self.obj1).lower() == 'lagarto' and ((str(self.obj2).lower() == 'papel' or str(self.obj2).lower() == 'spock')):
                     print('Jogador 1 Ganhou!')
                 else:
                     print("Jogador 1 perdeu!")
