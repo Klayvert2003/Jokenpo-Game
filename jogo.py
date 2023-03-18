@@ -14,8 +14,6 @@ def main():
         obj1 = input('Jogador 1 escolhe: '),
         obj2 = input('Jogador 2 escolhe: ')
     )
-    
-    jogo=jogo
 
 if __name__== "__main__":
     main()
